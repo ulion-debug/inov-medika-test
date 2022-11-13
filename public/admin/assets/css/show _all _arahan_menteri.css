@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+body{
+  font-family: "Poppins", sans-serif; 
+  font-weight: normal; 
+  font-style: normal ; 
+  font-size: 12px; 
+  line-height: 18px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav_akun-icon{
+  color: white;
+  font-size: 1.3rem;
+}
+
+.navbar-brand{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-left: 25px;
+  padding-bottom: 0 !important;
+}
+
+.navbar-brand h3 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #fdb514;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+td {
+  vertical-align: middle
+}
+
+.td .gambar{
+  align-items: left;
+}
+
+.form-control{
+  background-color: #FAF9F9;
+}
+
+.table-success{
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-style: normal ;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.progress-bar{
+  border-radius: 0px;
+  width: 21px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.gambar{
+  width: 10px;
+  height: 10px;
+}
+
+.navbar-icons {
+  font-size: 2.4rem;
+}
+
+.navbar{
+  position: auto;
+  height: 50px;
+  left: 0px;
+  top: -1px;
+}
+
+.btn{
+  font-size: 12px; 
+  width: auto;
+  height: auto;
+  left: 52.5px;
+  background: #322881;
+  border-radius: 2.5px;
+}
+
+.table{
+  width: 856.28px;
+  height: 813,275px;
+  left: 51px;
+  top: 214.725px;
+}
+
+.img{
+  float:right;
+}
+
+.container-content {
+  margin: 0 30px;
+}
+
+.container .justify-content-center {
+  width: 1700px;
+}
+
+.progress-bar{
+  border-radius: 0px;
+  border: 0px;
+}
+
+.form-select {
+  width: 100px !important;
+  height: 30px;
+  font-size: 12px !important;
+  text-align: center;
+}
+
+.d-flex h5 {
+  font-size: 12px;
+  margin: 0;
+  align-content: center !important;
+  padding: 5px;
+}
+
+.d-flex .me-5 {
+  margin-right: 27rem !important;
+}
