@@ -57,6 +57,20 @@ class TransaksiController extends Controller
         ]);
         return redirect('/transaksi')->with('sukses','Data berhasil dihapus');
     }
+
+    public function bayar($id)
+    {
+        
+        $transaksi = Transaksi::find($id);
+        return view('informasi/bayar', ['transaksi' =>$transaksi]);
+    }
+    public function bayarupdate(Request $request,$id)
+    {
+        $transaksi = Transaksi::find($id);
+        $transaksi->update($request->all());
+        return redirect('/informasi')->with('sukses','Data berhasil diupdate');
+    }
+
     public function exportExcel() 
     {
         return Excel::download(new TransaksiExport, 'Transaksi.xlsx');
@@ -71,5 +85,20 @@ class TransaksiController extends Controller
         $tindakan = Tindakan::all();
 
         return response()->json($tindakan);
+    }
+
+    public function grafik(){
+        $total_transaksi = Transaksi::select(DB::raw("CAST(SUM(harga) as int) as harga"))
+        ->GroupBy(DB::raw("Month(tanggal)"))
+        ->orderBy('harga','ASC')
+        ->pluck('harga');
+        //dd($total_transaksi);
+
+        $bulan = Transaksi::select(DB::raw("MONTHNAME(tanggal) as bulan"))
+        ->GroupBy(DB::raw("MONTHNAME(tanggal)"))
+        ->pluck('bulan');
+        //dd($bulan);
+
+        return view('transaksi.grafik', compact('total_transaksi', 'bulan'));
     }
 }

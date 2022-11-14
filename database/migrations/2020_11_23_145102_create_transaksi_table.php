@@ -21,6 +21,7 @@ class CreateTransaksiTable extends Migration
             $table->string('jenis_kelamin')->default('L');
             $table->string('nama_tindakan');
             $table->bigInteger('harga')->nullable();
+            $table->string('status');
             $table->timestamps();
         });
     }

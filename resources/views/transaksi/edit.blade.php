@@ -21,7 +21,7 @@
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">NIK</label>
-          <input name="nik" type="integer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tanggal" value="{{$transaksi->nik}}">
+          <input name="nik" type="bigInteger" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NIK" value="{{$transaksi->nik}}">
       </div>
         <div class="form-group">
             <label for="exampleInputEmail1">Tanggal</label>
@@ -37,7 +37,7 @@
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Harga</label>
-          <input name="harga" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jumlah" value="{{$transaksi->harga}}">
+          <input name="harga" type="bigInteger" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jumlah" value="{{$transaksi->harga}}">
         </div>
         
         <button type="submit" class="btn btn-warning">Update</button>

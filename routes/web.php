@@ -52,6 +52,9 @@ Route::get('/transaksi/{id}/delete','App\Http\Controllers\TransaksiController@de
 Route::get('/transaksi/exportExcel','App\Http\Controllers\TransaksiController@exportExcel');
 Route::get('/transaksi/exportPdf','App\Http\Controllers\TransaksiController@exportPdf');
 Route::get('/tindakanget','App\Http\Controllers\TransaksiController@GetTransaksi');
+Route::get('/informasi/{id}/bayar','App\Http\Controllers\TransaksiController@bayar');
+Route::post('/informasi/{id}/bayarupdate','App\Http\Controllers\TransaksiController@bayarupdate');
+Route::get('/laporan','App\Http\Controllers\TransaksiController@grafik');
 
 // Data Pasien
 Route::get('/pasien','App\Http\Controllers\PasienController@index');

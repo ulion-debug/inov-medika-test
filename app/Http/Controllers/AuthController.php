@@ -21,7 +21,7 @@ class AuthController extends Controller
         if(Auth::attempt($request->only('email', 'password'))){
             Aktivitas::create([
                 'user_id'=> auth()->user()->id,
-                'aktivitas' => 'Login SIMALAB',
+                'aktivitas' => 'Login',
             ]);   
             return redirect('/dashboard');
         }
@@ -33,7 +33,7 @@ class AuthController extends Controller
      
         Aktivitas::create([
             'user_id'=> auth()->user()->id,
-            'aktivitas' => 'Logout SIMALAB',
+            'aktivitas' => 'Logout',
         ]);   
         Auth::logout();
         return redirect('/');

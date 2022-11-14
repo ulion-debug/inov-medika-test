@@ -81,7 +81,7 @@
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">NIK</label>
-    <input id="nik" type="integer" class="form-control" aria-describedby="emailHelp" placeholder="NIK">
+    <input name="nik" id="nik" type="bigInteger" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="NIK">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Tanggal</label>
@@ -89,7 +89,7 @@
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Jenis Kelamin</label>
-    <input id='jenis_kelamin' type="text" class="form-control" aria-describedby="emailHelp" placeholder="Jenis Kelamin">
+    <input name="jenis_kelamin" id='jenis_kelamin' type="text" id="exampleInputEmail1" class="form-control" aria-describedby="emailHelp" placeholder="Jenis Kelamin">
   </div>
   <div class="input-field">
     <label for="exampleInputEmail1">Nama Tindakan</label>
@@ -97,7 +97,14 @@
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Harga</label>
-    <input id='harga' type="integer" class="form-control" aria-describedby="emailHelp" placeholder="Harga">
+    <input name="harga" id='harga' type="bigInteger" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Harga">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Status</label>
+    <select name="status" class="form-control" id="exampleFormControlSelect1">
+      <option value="Belum Bayar">Belum Bayar</option>
+      <option value="Lunas">Lunas</option>
+    </select>
   </div>
 
             </div>

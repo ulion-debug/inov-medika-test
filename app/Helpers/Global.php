@@ -1,6 +1,7 @@
 <?php
 use App\Models\Pasien;
 use App\Models\DataObat;
+use App\Models\Transaksi;
 
 function totalPasien()
 {
